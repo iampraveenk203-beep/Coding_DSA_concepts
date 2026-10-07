@@ -1,6 +1,8 @@
 """
 Write a command to match the sum of pairs in the list is equal to given target number.
 Use Hash set also called as set in python that does not allow duplicasy.
+Time complexity: Single loop iteration so O(n), If it is nested loop then O(n2)
+Best case: O(1) If you are finding only one pair and that found in first elements of list.
 """
 def find_pairs_with_sum(numbers, target):
     seen = set()
