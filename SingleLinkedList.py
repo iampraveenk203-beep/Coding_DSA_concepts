@@ -161,3 +161,13 @@ ll.display()
 ll.delete_by_pos(1)
 ll.display()
 
+"""
+OUTPUT
+1
+1->2
+1->2->3
+1->2->20->3
+2->20->3
+2->20
+2
+"""

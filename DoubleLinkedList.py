@@ -181,3 +181,14 @@ dl.delete_by_pos(2)
 dl.display() 
 
         
+"""
+OUTPUT:
+3<-->2
+3<-->2<-->1
+3<-->2<-->5<-->1
+2<-->5<-->1
+2<-->5
+2
+Pos is out of range
+2
+"""

@@ -53,3 +53,18 @@ print(f"Stack top is: {liststack.top()}")
 print(f"Stack size is: {liststack.size()}")
 print(f"Check stack is empty: {liststack.is_empty()}")
 print(f"Stack is: {liststack.display()}")
+
+"""
+OUTPUT:
+Stack is: Empty Stack
+Stack is: [10]
+Stack is: [10, 20]
+Stack is: [10, 20, 30]
+Stack is: [10, 20, 30, 40]
+Stack is: [10, 20, 30]
+Stack is: [10, 20]
+Stack top is: 20
+Stack size is: 2
+Check stack is empty: False
+Stack is: [10, 20]
+"""

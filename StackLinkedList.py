@@ -72,3 +72,18 @@ print(f"Stack size is: {stack.size()}")
 print(f"Stack is empty: {stack.is_empty()}")
 stack.display()
 
+"""
+OUTPUT:
+Stack is Empty
+Top ->10->None
+Top ->20->10->None
+Top ->30->20->10->None
+Top ->40->30->20->10->None
+Stack size is: 4
+Stack TOP is: 40
+Top ->30->20->10->None
+Top ->20->10->None
+Stack size is: 2
+Stack is empty: False
+Top ->20->10->None
+"""

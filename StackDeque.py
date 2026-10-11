@@ -55,3 +55,20 @@ print(f"Stack top item is: {stack.top_item()}")
 
 print(f"Stack is empty: {stack.is_empty()}")
 print(f"Stack size: {stack.size()}")
+
+
+"""
+OUTPUT:
+Stack is: Stack is Empty
+Stack is: deque([10])
+Stack is: deque([10, 20])
+Stack is: deque([10, 20, 30])
+Stack is: deque([10, 20, 30, 40])
+Stack top item is: 40
+Stack is: deque([10, 20, 30])
+Stack is: deque([10, 20])
+Stack is: deque([10])
+Stack top item is: 10
+Stack is empty: False
+Stack size: 1
+"""
