@@ -142,30 +142,25 @@ class DoubleLinkedList:
     def delete_by_value(self, value):
         # Case 1: List is empty
         if self.head is None:
-            print(f"List is empty")
-        else:
-            # Case 2: Traverse the list till match the value
-            temp = None
-            current = self.head
+            print("List is empty")
 
-            while current is not None:
-                if current.data == value:
-                    # Case 3: Node to delete is head node.
-                    if current == self.head:
-                        temp = self.head.data
-                        self.head = current.next
-                        if self.head is not None:
-                            self.head.prev = None
-                        return temp.data
-                else:
-                    temp = current.data
-                    # Case 4: Matched node is middle or end.
-                    if current.prev is not None:
-                        current.prev.next = current.next
-                    if current.next is not None:
-                        current.next.prev = current.prev
-                current = current.next
-                return temp
+        # Traverse the list to match the given value
+        current = self.head
+
+        while current is not None:
+            if current.data == value:
+                # Case 2 The node to delete is the Head node
+                if current == self.head:
+                    self.head = current.next
+                    if self.head is not None:
+                        self.head.prev = None
+                    return True
+                # Case 3 The node is to delete is middle or tail
+                if current.prev is not None:
+                    current.prev.next = current.next
+                if current.next is not None:
+                    current.next.prev = current.prev
+            current = current.next
 
 dl = DoubleLinkedList()
 dl.insert_at_beginning(1)
